@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Authentication System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="form-container">
+            <form id="loginForm">
+                <h2>Login</h2>
+                <div class="form-error" id="loginError"></div> <!-- Error display for login -->
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <input type="checkbox" id="showLoginPassword"> Show Password
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form-container">
+            <form id="registerForm">
+                <h2>Register</h2>
+                <div class="form-error" id="registerError"></div> <!-- Error display for registration -->
+                <input type="text" id="newUsername" placeholder="New Username" required>
+                <input type="password" id="newPassword" placeholder="New Password" required>
+                <input type="checkbox" id="showRegisterPassword"> Show Password
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+
+        <!-- Container for the buttons -->
+        <div class="auth-buttons">
+            <!-- Google Sign-In button -->
+            <button class="button google-button" id="googleSignIn">Sign in with Google</button>
+
+            <!-- SSO Login button -->
+            <button class="button sso-button" id="ssoLogin">Log in with SSO</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

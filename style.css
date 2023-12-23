@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .form-container h2 {
+        margin-bottom: 20px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="password"] {
+        width: calc(100% - 51px); /* Adjusted to account for 30px padding on both sides */
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .form-container button {
+        width: calc(100% - 20px);
+        padding: 15px;
+        border: none;
+        background-color: #333;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+        .form-container button:active {
+            transform: translateY(2px);
+        }
+
+        .form-container button:hover {
+            background-color: #555;
+        }
+
+.form-error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.auth-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+    transition: transform 0.1s ease;
+}
+
+    .button:active {
+        transform: translateY(2px);
+    }
+
+.google-button {
+    background-color: #4285F4;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.sso-button {
+    background-color: #2F2F2F;
+    color: white;
+}
+
+.form-container input[type="checkbox"] {
+    margin-bottom: 15px;
+}
